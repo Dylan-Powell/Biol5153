@@ -10,10 +10,10 @@ parser = argparse.ArgumentParser(description='This script will assign job name a
 parser.add_argument('job_name', help='Defining the name of the job to be submitted', type=str)
 
 # add optional arguments
-parser.add_argument('--queue', help='assign the queue for the job', type=str)
-parser.add_argument('--number_nodes', help='assign the number of nodes for the job', type=str)
-parser.add_argument('--processors', help='assign the number of processors for the job', type=str)
-parser.add_argument('--walltime', help='assign the amount of walltime needed for the job', type=str)
+parser.add_argument('--queue', help='assign the queue for the job', type=str, default='comp01')
+parser.add_argument('--number_nodes', help='assign the number of nodes for the job', type=str, default='32')
+parser.add_argument('--processors', help='assign the number of processors for the job', type=str, default='1')
+parser.add_argument('--walltime', help='assign the amount of walltime needed for the job', type=str, default='1')
 
 
 # parse the arguments
